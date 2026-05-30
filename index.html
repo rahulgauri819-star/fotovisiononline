@@ -8,7 +8,7 @@
 <style>
 *{box-sizing:border-box;margin:0;padding:0;}
 :root{
-  --gold:#111111;--gold-d:#000000;--gold-lt:#cccccc;--gold-bg:#f5f5f5;--gold-bg2:#EBEBEB;
+  --gold:#B8831A;--gold-d:#8A6012;--gold-lt:#E8C96A;--gold-bg:#FFF8ED;--gold-bg2:#EBEBEB;
   --ink:#1a1a1a;--ink2:#444;--ink3:#777;--ink4:#aaa;--ink5:#ddd;
   --paper:#fff;--paper2:#f8f7f3;--paper3:#f0ede5;--paper4:#e8e4da;
   --green:#16a34a;--green-bg:#f0fdf4;--red:#dc2626;--red-bg:#fef2f2;
@@ -34,7 +34,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--paper2);color:var(--ink);
 .badge{position:absolute;top:-3px;right:-3px;background:var(--red);color:#fff;font-size:9px;font-weight:800;border-radius:10px;min-width:16px;height:16px;display:flex;align-items:center;justify-content:center;padding:0 3px;display:none;}
 .badge.show{display:flex;}
 /* ── Marquee ── */
-.marquee-wrap{background:linear-gradient(90deg,#111111,#555555,#111111);overflow:hidden;height:34px;display:flex;align-items:center;}
+.marquee-wrap{background:linear-gradient(90deg,#B8831A,#555555,#B8831A);overflow:hidden;height:34px;display:flex;align-items:center;}
 .marquee-track{display:flex;gap:0;animation:marquee 20s linear infinite;white-space:nowrap;}
 .marquee-track span{font-size:12px;font-weight:700;color:#fff;padding:0 24px;letter-spacing:.3px;}
 @keyframes marquee{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
@@ -1077,8 +1077,8 @@ function buildHero() {
       <div style="font-size:27px;font-weight:900;color:#fff;line-height:1.15;letter-spacing:-.5px;margin-bottom:8px;">${cap.title}</div>
       <div style="font-size:12px;color:rgba(255,255,255,.65);margin-bottom:22px;font-style:italic;line-height:1.5;">${cap.sub}</div>
       <div style="display:flex;gap:8px;">
-        <button style="background:#fff;color:#000;border:none;border-radius:4px;padding:11px 22px;font-size:11px;font-weight:800;letter-spacing:1px;text-transform:uppercase;cursor:pointer;font-family:inherit;" onclick="goFlow('print')">Order Prints</button>
-        <button style="background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,.55);border-radius:4px;padding:11px 22px;font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase;cursor:pointer;font-family:inherit;" onclick="goFlow('frame')">Print + Frame</button>
+        <button style="background:var(--gold);color:#fff;border:none;border-radius:10px;padding:11px 22px;font-size:13px;font-weight:700;cursor:pointer;font-family:inherit;" onclick="goFlow('print')">Order Prints</button>
+        <button style="background:rgba(255,255,255,.12);color:#fff;border:1px solid rgba(255,255,255,.3);border-radius:10px;padding:11px 22px;font-size:13px;font-weight:700;cursor:pointer;font-family:inherit;" onclick="goFlow('frame')">Print + Frame</button>
       </div>`;
     slide.appendChild(cont);
     wrap.insertBefore(slide, dotsEl);
